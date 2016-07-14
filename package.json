@@ -1,0 +1,27 @@
+{
+  "name": "vue-image-lazyload",
+  "version": "1.0.0",
+  "description": "vuejs image lazy load plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huhuaaa/vue-lazyload.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "lazyload",
+    "image",
+    "load",
+    "loading"
+  ],
+  "author": "huhuaaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huhuaaa/vue-lazyload/issues"
+  },
+  "homepage": "https://github.com/huhuaaa/vue-lazyload#readme"
+}
