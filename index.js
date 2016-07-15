@@ -106,9 +106,9 @@ exports.install = function (Vue, options) {
         },
         update: function(newValue, oldValue) {
             var _this2 = this
-            var src = newValue.src ? newValue.src : newValue
-            var error = newValue.error ? newValue.error : init.error
-            var loading = newValue.loading ? newValue.loading : init.loading
+            var src = newValue && newValue.src ? newValue.src : newValue
+            var error = newValue && newValue.error ? newValue.error : init.error
+            var loading = newValue && newValue.loading ? newValue.loading : init.loading
             this.el.setAttribute('lazy', 'loading')
             if (!this.arg) {
                 this.el.setAttribute('src', loading)
