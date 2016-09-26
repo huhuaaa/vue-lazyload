@@ -63,7 +63,11 @@ exports.install = function (Vue, options) {
             }
             item.el.setAttribute('lazy', 'loaded')
         }, function(){
-            item.el.setAttribute('src', item.error)
+            if (!item.bindType) {
+                item.el.setAttribute('src', item.error)
+            }else{
+                item.el.setAttribute('style', item.bindType + ': url(' + item.error + ')');
+            }
             item.el.setAttribute('lazy', 'error')
             if(item.try >= init.try){
                 var index = listeners.indexOf(item)
