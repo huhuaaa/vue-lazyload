@@ -145,8 +145,8 @@ exports.install = function (Vue, options) {
             for (i = 0; i < len; i++) {
                 if (listeners[i].src == src) {
                     listeners.splice(i, 1)
-                    i --;
-                    len --;
+                    i --
+                    len --
                 }
             }
 
